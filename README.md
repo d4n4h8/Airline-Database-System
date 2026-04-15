@@ -5,6 +5,12 @@ A database project for designing and implementing an Airline Reservation System 
 ## Overview
 This project focuses on building a relational database system to manage airline operations, including airlines, airplanes, flights, passengers, bookings, and flight status information.
 
+## ERD Diagram
+![ERD](ER%20Diagram.png)
+
+## Relational Schema
+![Schema](Relational%20Schema.png)
+
 ## Features
 - Designed an Entity Relationship Diagram (ERD)
 - Built the relational schema
