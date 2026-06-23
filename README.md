@@ -1,54 +1,53 @@
-# Airline Reservation System
+# ✈️ Airline Reservation System (SQL Database Design)
 
-A database project for designing and implementing an Airline Reservation System using SQL.
+A relational database project focused on designing, modeling, and implementing a robust **Airline Reservation System** using MySQL. The system effectively manages core aviation operations including airlines, aircraft fleet capacities, flight scheduling, passenger demographics, and real-time ticketing/booking status.
 
-## Overview
-This project focuses on building a relational database system to manage airline operations, including airlines, airplanes, flights, passengers, bookings, and flight status information.
+---
 
-## ERD Diagram
+### ⚙️ Core Features & Database Lifecycle
+1. **Conceptual Design (ER Modeling):** Structured an Entity-Relationship Diagram (ERD) defining entities, primary/foreign keys, and cardinalities.
+2. **Logical Design (Relational Schema):** Mapped the ERD into normalized relational tables enforcing referential integrity.
+3. **Data Definition (DDL):** Implemented MySQL tables with strict constraints (`PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, `CHECK`).
+4. **Data Manipulation (DML):** Populated the schema with realistic aviation datasets and transactions.
+5. **Data Analysis & Reporting:** Developed analytical SQL queries utilizing aggregations (`GROUP BY`), multi-table `JOIN` operations, conditional filtering, and Subqueries.
+6. **Database Views:** Created virtual summary tables for automated business reports.
+
+---
+
+### 🗄️ Relational Architecture & Entities
+The system architecture consists of **6 primary tables** designed to optimize data consistency and prevent redundancy:
+* 🏢 **Airline:** Tracks global carrier information.
+* 🛩️ **Airplane:** Manages fleet metrics and seating capacities.
+* 📅 **Flight:** Controls route planning, schedules, and pricing.
+* 🕒 **Flight_Status:** Captures live status updates (Scheduled, Delayed, Cancelled).
+* 👤 **Passenger:** Stores customer records, contacts, and demographics.
+* 🎫 **Booking:** Records ticket reservations, seat assignments, and travel classes.
+
+---
+
+### 🛠️ Technologies Used
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Database%20Design-Structured%20Query%20Language-orange?style=flat" alt="SQL">
+</p>
+
+---
+
+### 🖼️ Schema & Conceptual Layout
+
+#### 🗺️ Entity-Relationship Diagram (ERD)
 ![ERD](ER%20Diagram.png)
 
-## Relational Schema
+#### 📋 Relational Database Schema
 ![Schema](Relational%20Schema.png)
 
-## Features
-- Designed an Entity Relationship Diagram (ERD)
-- Built the relational schema
-- Implemented SQL tables with constraints
-- Inserted sample records into the database
-- Wrote SQL queries for data retrieval and analysis
-- Created views for reporting purposes
+---
 
-## Main Entities
-- Airline
-- Airplane
-- Flight
-- Flight_Status
-- Passenger
-- Booking
+---
 
-## Technologies Used
-- MySQL
-- Database Design
-- ER Modeling
+### 💻 Local Implementation & Setup
+To deploy this database script locally on your MySQL instance, follow these steps:
 
-## Database Functions
-The system supports:
-- Managing airlines and airplanes
-- Tracking flights and flight status
-- Managing passenger information
-- Recording bookings and ticket classes
-- Running SQL queries for reports and analysis
-
-## Example Queries
-- Retrieve male passengers information
-- Show business class bookings
-- Count total airplanes
-- Count bookings per flight
-- Display flight departure time and status
-- Retrieve scheduled flights
-- Show flights using airplanes with capacity greater than 300
-- Create an airplane capacity view
-
-## Goal
-To design a structured airline reservation database system that ensures efficient data organization, supports query analysis, and demonstrates core database design principles.
+1. **Clone this repository to your machine:**
+   ```bash
+   git clone [https://github.com/d4n4h8/Airline-Database-System.git](https://github.com/d4n4h8/Airline-Database-System.git)
